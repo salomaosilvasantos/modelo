@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -15,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import br.ufc.quixada.npi.repository.GenericRepository;
 
-
+@Named
 public abstract class JpaGenericRepositoryImpl<T> implements
 		GenericRepository<T> {
 
